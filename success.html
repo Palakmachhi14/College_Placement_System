@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .success-message {
+            color: #008000;
+        }
+
+        .success-message h1 {
+            font-size: 36px;
+        }
+
+        .success-message p {
+            font-size: 18px;
+        }
+
+        .student-info {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-message">
+            <h1>Submission Successful</h1>
+            <p>Your application has been successfully submitted.</p>
+        </div>
+        <div class="student-info">
+            <p>Enrollment Number: {{ enrollment_no }}</p>
+            <p>Name: {{ student_name }}</p>
+        </div>
+        <div class="student-info">
+            <p>Your Enrollment number is your username</p>
+            <p><a href="stulog.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

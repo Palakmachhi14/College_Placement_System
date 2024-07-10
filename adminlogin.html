@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link href="stulog.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span>College Placement System</span>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>|</li>
+                <li><a href="stulog.html">Student Login</a></li>
+                <li>|</li>
+                <li><a href="hodlog.html">HOD Login</a></li>
+                <li>|</li>
+                <li><a href="adminlogin.html">Administration Login</a></li>
+                <li>|</li>
+                <li><a href="industlog.html">Industry Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Administration Login</h2>
+        <form action="hodlog.php" method="post">
+            <label for="username">Administration ID:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

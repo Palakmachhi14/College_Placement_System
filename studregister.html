@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link href="studregister.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span>College Placement System</span>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>|</li>
+                <li><a href="stulog.html">Student Login</a></li>
+                <li>|</li>
+                <li><a href="hodlog.html">HOD Login</a></li>
+                <li>|</li>
+                <li><a href="adminlogin.html">Administation Login</a></li>
+                <li>|</li>
+                <li><a href="industlog.html">Industry Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="container">
+            <span class="form1">Placement Details:</span>
+            
+            <label for="position">Position Applied For:</label>
+            <input type="text" id="position" name="position" required>
+
+            
+            <label for="yaer">Duration of Placement:</label>
+            <input type="number" id="year" name="year" required>
+            
+            <label for="location">Location Preference:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="date">Preferred Start Date:</label>
+            <input type="date" id="date" name="date">
+            
+            <label for="relocate">Are you willing to relocate?</label>
+            <input type="radio" id="yes" name="relocate" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="relocate"
+            value="no">
+            <label for="no">No</label>
+    </div>
+
+    <div class="container">
+            <span class="form1">Academic Details:</span>
+            
+            <label for="collegeName">Secondary Education:</label>
+            <input type="text" id="collegeName" name="collegeName" required>
+
+            <label for="percentage">Percentage:</label>
+            <input type="number" id="percentage" name="percentage">
+            
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" required>
+            
+            <label for="collegeName">Higher Secondary Educational/Diploma:</label>
+            <input type="text" id="collegeName" name="collegeName" required>
+            
+            <label for="percentage">Percentage:</label>
+            <input type="number" id="percentage" name="percentage" required>
+            
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" required>
+
+            <label for="collegeName">College Name:</label>
+            <input type="text" id="collegeName" name="collegeName" required>
+
+            <label for="major">Department/Major:</label>
+            <input type="text" id="major" name="major" required>
+            
+            <label for="percentage">Current Year of Study:</label>
+            <input type="number" id="year" name="curryear" required>
+
+            <label for="cgpa">GPA/CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" required>
+            
+            <label for="year">Year of Passing:</label>
+            <input type="number" id="year" name="year" required>
+            
+            <label for="GradDate">Expected Graduation Date:</label>
+            <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="container">
+        <span class="form1">Upload Document:</span>
+        <label for="documents">Resume:</label>
+        <input type="file" id="documents" name="documents" accept=".pdf, .doc, .docx" required>
+
+        <label for="documents">Cover Later:</label>
+        <input type="file" id="documents" name="documents" accept=".pdf, .doc, .docx" required>
+    </div>
+
+    <div class="container">
+            <p class="form1">Reference:</p> 
+            <span class="num">1.</span>
+            <label for="documents">Reference Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="number">Contact no.:</label>
+            <input type="number" id="number" name="number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <span class="num">2.</span>
+            <label for="documents">Reference Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="number">Contact no.:</label>
+            <input type="number" id="number" name="number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="container">
+        <p class="form1">Declaration:</p>
+        <p class="info">I hereby declare that the information provided in this application is true and accurate to the best of my knowledge. I understand that any false information may result in the rejection of my application.</p>
+        <br>
+
+        <label for="photo">Signature:</label>
+        <input type="file" id="photo" name="photo" accept=".jpeg, .png, .jpg" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+    
+    <div class="container">
+        <label for="username">Enrollment no.:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="container1">
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.stat h2 {
+    font-size: 20px;
+}
+
+.stat p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Admin</h1>
+        <div class="stats">
+            <div class="stat">
+                <h2>Placed Students</h2>
+                <p>{{ placed_count }}</p>
+            </div>
+            <div class="stat">
+                <h2>Remaining Students</h2>
+                <p>{{ not_placed_count }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

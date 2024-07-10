@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="studmod1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Interviews</a></li>
+                <li><a href="#">Placement Drives</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome, {{ student_name }}</h1>
+        <p>Enrollment Number: {{ enrollment_no }}</p>
+        <p>Position: {{ position }}</p>
+        <p>Year: {{ year }}</p>
+        <p>Location: {{ location }}</p>
+        <img src="{{ student_image_url }}" alt="Student Image" width="150">
+    </div>
+
+    <div class="interviews">
+        <h2>Upcoming Interviews</h2>
+        <!-- Display interview information from the database here -->
+    </div>
+
+    <div class="drives">
+        <h2>Upcoming Placement Drives</h2>
+        <!-- Display placement drive information from the database here -->
+    </div>
+</body>
+</html>
